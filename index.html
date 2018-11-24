@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+                
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        <!-- During development, do not comment out this below line as we need the icon during development flow
+            BUT comment the below line when ready for production or minify/compressed form -->
+        <link rel="stylesheet" href="css/icon-font.css">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Anshul JS</title>
+    </head>
+    <body>
+
+        <!-- Page menu : 3 line button at corner -->
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+            
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">HTML5 & CSS3(SASS)</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">JavaScript</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Angular JS</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">NPM, Gulp</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Big Image with Green Gradient -->
+        <header class="header" id="home">
+
+            <!-- Logo -->
+            <div class="header__logo-box">
+                <img src="img/ajslogo.png" alt="Logo" class="header__logo">
+            </div>
+            <!-- Big Header at the Center -->
+            <div class="header__text-box">
+
+                <div class="myImg story">
+                    <figure class="story__shape">
+                        <img src="img/anshul.jpg" alt="person on tour" class="story__img1">
+                        <figcaption class="story__caption">Anshul JS, <span class="story__designation">UI Developer</span></figcaption>
+                    </figure>
+                </div>
+                <!-- Header -->
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">
+                        Anshul JS
+                    </span>
+                    <span class="heading-primary--sub">
+                        Front-end DEVELOPER
+                    </span>
+                </h1>
+                <!-- Button At the Center -->
+                <!-- <a href="#" class="btn btn--white btn--animated">take a tour of me</a> -->
+            </div>            
+        </header>
+
+        <!-- 3 images with text -->
+        <main id="aboutme">
+            <section class="section-about">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                        My Native Language
+                    </h2>
+                </div>  
+
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <h3 class="heading-tertiary u-margin-bottom-small">This is about me....in short..😀</h3>
+                        <p class="paragraph">
+                            Hello world again! I'm Anshul Nautiyal, a Front-End developer, Coding is my passion, I code most of the time.
+                            I am coding from past 2 years but I think I'll stay a noob all of my life and thats what makes
+                            me move forward.
+                        </p>
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">how's life going</h3>
+                        <p class="paragraph">
+                            Ahhhh.....Pretty good. Working hard to become a professional Full stack developer. And yes, I mean professional
+                            developer.😎
+                        </p>
+
+                        <!-- <a href="JavaScript:Void(0);" class="btn-text">Check Out &rarr;</a> -->
+                    </div>
+                    <div class="col-1-of-2">
+                        
+                        <div class="composition">
+
+                            <!-- <img    srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                    sizes="(max-width: 56.25em ) 20vw, (max-width: 37.5em ) 30vw, 300px" 
+                                    alt="Photo 1"
+                                    class="composition__photo composition__photo--p1"
+                                    src="img/nat-1-large.jpg">
+
+                            <img    srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                                    sizes="(max-width: 56.25em ) 20vw, (max-width: 37.5em ) 30vw, 300px"
+                                    alt="Photo 2" 
+                                    class="composition__photo composition__photo--p2"
+                                    src="img/nat-2-large.jpg">
+
+                            <img    srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                                    sizes="(max-width: 56.25em ) 20vw, (max-width: 37.5em ) 30vw, 300px"
+                                    alt="Photo 3" 
+                                    class="composition__photo composition__photo--p3"
+                                    src="img/nat-3-large.jpg"> -->
+
+                            <img src="img/js.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/ajs.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/htmlCss.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- 4 box with icon -->
+            <section class="section-features" id="projects">
+                
+
+                <div class="row">
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <!-- <i class="feature-box__icon icon-basic-world"></i> -->
+                            <i class="feature-box__icon fab fa-github"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Github
+                            </h3>
+                            <p class="feature-box__text">
+                                Find all my projects. Download them and make your contribution.
+                            </p>
+                            <a href="https://github.com/AnshulNautiyal" class="btn-text">Github&rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <!-- <i class="feature-box__icon icon-basic-compass"></i> -->
+                            <i class="feature-box__icon fa fa-stack-overflow"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Stack OverFlow
+                            </h3>
+                            <p class="feature-box__text">
+                                Find me here to help you. And of course, I also need help.
+                            </p>
+                            <a href="https://stackoverflow.com/users/4570752/code-helper" class="btn-text">Stack OverFlow&rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <!-- <i class="feature-box__icon icon-basic-map"></i> -->
+                            <i class="feature-box__icon fab fa-codepen"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                CodePen.io
+                            </h3>
+                            <p class="feature-box__text">
+                                This is the time for show-off. Explore my creation.
+                                Show your creation.
+                            </p>
+                            <a href="https://codepen.io/AnshulJS/" class="btn-text">Codepen&rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <!-- <i class="feature-box__icon icon-basic-heart"></i> -->
+                            <i class="feature-box__icon fab fa-hackerrank"></i>
+                            <h3 class="heading-tertiary u-margin-bottom-small">
+                                Hacker Rank
+                            </h3>
+                            <p class="feature-box__text">
+                                This is a place where you will find me serious.🤨
+                                Let me challenge you.
+                            </p>
+                            <a href="https://www.hackerrank.com/Anshul_Nautiyal" class="btn-text">Hacker Rank&rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+        </main>
+
+
+        <!-- 3 Box that flip  -->
+        <section class="section-tours">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Projects
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--1">
+                                    Portfolio Design
+                                </span>
+                                 
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>NPM</li>
+                                    <li>Responsive Design</li>
+                                    <li>CSS Layouts</li>
+                                    <li>Open Source</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">
+                                        Only In
+                                    </div>
+                                    <div class="card__price-value">
+                                        <i class="feature-box__icon fab fa-github" style="color:#fff;"></i>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/AnshulNautiyal/Portfolio" class="btn btn--white">Github!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd rotate card -->
+                <div class="col-1-of-3">
+                    
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--2">
+                                    Book My Destination
+                                </span>
+                    
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Hotel-Flight Booking Site</li>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>Responsive Design</li>
+                                    <li>CSS3 Flex Layout</li>
+                                    <li>Open Source</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">
+                                        Only In
+                                    </div>
+                                    <div class="card__price-value">
+                                        <i class="feature-box__icon fab fa-github" style="color:#fff;"></i>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/AnshulNautiyal/Book-Your-Destination.com" class="btn btn--white">Github!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd rotate card -->
+                <div class="col-1-of-3">
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <div class="card__picture card__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card__heading">
+                                <span class="card__heading-span card__heading-span--3">
+                                    omni-hunger.com
+                                </span>
+                    
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>Online Food Delivery</li>
+                                    <li>HTML5 & CSS3</li>
+                                    <li>Responsive Design</li>
+                                    <li>Mastering the CSS3</li>
+                                    <li>Open Source</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <div class="card__price-only">
+                                        Only In
+                                    </div>
+                                    <div class="card__price-value">
+                                        <i class="feature-box__icon fab fa-github" style="color:#fff;"></i>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/AnshulNautiyal/Online-Food-Delivery" class="btn btn--white">Github!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <a href="https://github.com/AnshulNautiyal?tab=repositories" class="btn btn--green">discover all Projects</a>
+            </div>
+        
+        </section>
+
+
+        <!-- User story  -->
+        <section class="section-stories" id="review">
+
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    <source src="img/video.webm" type="video/webm">
+                    Your browser is not supported.
+                </video>
+            </div>
+
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    making people happy
+                </h2> 
+            </div>
+
+            <div class="row">
+                <div class="story">  
+
+                    <figure class="story__shape">
+                        <img src="img/japs1.jpg" alt="person on tour" class="story__img">
+                        <figcaption class="story__caption">Japleen Kaur, <span class="story__designation">Developer</span>
+
+                        </figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            It's awesome to work with Anshul!
+                        </h3>
+                        <p>
+                            He has an inquisitive attitude while gathering the requirements which makes development easier and fun and provides a
+                            distinct perspective of the system. He puts all his efforts until the problem is solved. Added advantage : he's
+                            absolutely fun to work with.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="story">
+            
+                    <figure class="story__shape">
+                        <img src="img/aalekh.jpg" alt="person on tour" class="story__img">
+                        <figcaption class="story__caption">aalekh Pingley, <span class="story__designation">Senior BA</span></figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            No Excuses, No doubts.... That's how he works.
+                        </h3>
+                        <p>
+                        He pays great attention to detail and delivers quality work. He communicates clearly and is good at identifying and
+                        filling gaps. He's patient and has a great sense of humour and positive learning attitude.
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+
+            <div class="u-center-text u-margin-top-huge">
+                <!-- <a href="JavaScript:Void(0);" class="btn-text">read all stories &rarr;</a> -->
+            </div>
+        </section>
+
+
+        <!-- Form -->
+        <section class="section-book"  id="contactme">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+
+                        
+                        <form action="https://formspree.io/anshulnautiyaldeo@gmail.com" 
+                        method="POST"  class="form" autocomplete="off">
+
+                            <!-- Form Heading -->
+                            <div class="u-margin-bottom-medium ">
+                                <h2 class="heading-secondary">
+                                    Connect with me
+                                </h2>
+                            </div>
+
+                            <!-- Form Input -->
+                            <div class="form__group">
+
+                                <input type="text" name="name" class="form__input" placeholder="Full Name" id="name"  required>
+                                <label for="name" class="form__label">Full Name</label>
+                                                                
+                            </div>
+                            <div class="form__group">
+                                <input type="email" name="name" class="form__input" placeholder="Email Address" id="email" required>   
+                                <label for="email" class="form__label">Email Address</label>
+                                                                
+                            </div>
+
+                            <div class="form__group">
+                                <textarea  name="name" class="form__input" placeholder="Message..." rows="4" cols="50"></textarea>
+                                <!-- <label for="email" class="form__label">Email Address</label> -->
+                            
+                            </div>
+
+                            <!-- Form Radio Button -->
+                            <div class="form__group u-margin-bottom-medium">
+
+                                <div class="form__radio-group">
+                                    <input type="radio" name="name" class="form__radio-input" id="small" value="Personal">
+                                    
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Personal
+                                    </label>
+                                </div>
+                                
+                                <div class="form__radio-group">
+                                    <input type="radio" name="name" class="form__radio-input" id="large" value="Business">
+                                    
+                                    <label for="large"  class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Business
+                                    </label>
+                                </div>
+                            
+                            </div>
+
+                            <!-- Form Button -->
+
+                            <div class="form__group">
+                                 <button class="btn btn--green">Submit &rarr;</button>
+                            </div>
+
+                        </form>
+                        <!-- Form End -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__logo-box">
+
+                <picture class="footer__logo">
+                    <source srcset = "img/ajslogo.png 1x, img/ajslogo.png 2x"
+                            media  = "(max-width: 37.5rem)">
+                    <img srcset="img/ajslogo.png 1x, img/ajslogo.png 2x" style="width:14rem;" alt="Full Logo" >
+                </picture>
+                
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="#aboutme" class="footer__link">about me</a></li>
+                            <li class="footer__item"><a href="#projects" class="footer__link">projects</a></li>
+                            <li class="footer__item"><a href="#review" class="footer__link">Review</a></li>
+                            <li class="footer__item"><a href="#contactme" class="footer__link">contact me</a></li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Built By <a href="" class="footer__link">Anshul Nautiyal</a>. Copyright &copy: By <a href="" class="footer__link">Anshul Nautiyal</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Pop up -->
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="./img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+                    <img src="./img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section__tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &nbsp;  Reading the Document First</h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Unde aspernatur quasi facilis sed molestiae, iste quam a 
+                        mollitia ut reiciendis nulla eum facere minus consequuntur 
+                        quia, beatae, rerum laborum laboriosam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Unde aspernatur quasi facilis sed molestiae, iste quam a
+                        mollitia ut reiciendis nulla eum facere minus consequuntur
+                        quia, beatae, rerum laborum laboriosam.
+                    </p>
+
+                    <a href="#" class="btn btn--green">Book Now</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- HTML GRID -->
+        <!-- <section>
+            <div class="row">
+                <div class="col-1-of-2">
+                    Column 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Column 1 of 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Column 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Column 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Column 1 of 3
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-3">
+                    Column 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Column 2 of 3
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-4">
+                    Column 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Column 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Column 1 of 4 
+                </div>
+                <div class="col-1-of-4">
+                    Column 1 of 4
+                </div>
+            </div>
+        </section> -->
+        
+    </body>
+</html>

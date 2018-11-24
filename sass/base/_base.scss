@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    //This define what 1rem is?
+    font-size: 62.5%;   // 1rem = 10 px (10px/16px) = 62.5%;    since 16px is default font-size of browser, 
+                        //                                      So to make it 10px font size in percentage, just divide 10 by 16
+
+
+    @include respond(big-desktop){  // big desktop = 1800px    
+        font-size: 75%;             // 12px (12/16) = 75%
+    }
+    @include respond(tab-land){     // tablet in portrait mode = 1200px
+        font-size: 56.25%;          // 9px (9/16) = 56.25%
+    }
+    @include respond(tab-port){     // tablet in portrait mode = 900px
+        font-size: 50%;             // 8px (8/16) = 50%
+    }
+    @include respond(phone){        // phone = 600px 
+        font-size: 43.75%;         // 7px (7/16) = 43.75%
+    }
+}
+body{
+    box-sizing: border-box;
+    // padding:30px; 
+    // scroll-snap-type: y mandatory;
+    // overflow-y: scroll;
+}
+
+::selection{
+    background-color: $color-primary;
+    color: $color-white;
+} 
+

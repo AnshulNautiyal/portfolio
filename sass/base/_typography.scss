@@ -1,0 +1,117 @@
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    
+}
+
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 20px;
+
+    
+
+
+    &--main{
+        /* padding-left: 3%; */
+        display: block;
+        font-size: 5.5rem; 
+        font-weight: 400;
+        letter-spacing: 3.5rem; 
+        
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out; 
+        /* animation-delay: 2s; */
+        /* animation-iteration-count: 3; */
+        
+        @include respond(tab-land){     // tablet in portrait mode = 1200px
+            // font-size: 56.25%;          // 9px (9/16) = 56.25%
+            letter-spacing: 2rem;
+            font-size:6rem;
+        }
+        @include respond(tab-port){     // tablet in portrait mode = 900px
+            // font-size: 50%;             // 8px (8/16) = 50%
+            letter-spacing: 1rem;
+            font-size:5rem;
+        }
+
+        @include respond(phone){        // phone = 600px 
+            // font-size: 43.75%;         // 7px (7/16) = 43.75%
+            letter-spacing: 1rem;
+            font-size:3rem;
+        }
+
+    }
+
+    &--sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.9rem; 
+        animation-name: moveInRight;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(tab-land){     // tablet in portrait mode = 1200px
+            // font-size: 56.25%;          // 9px (9/16) = 56.25%
+            letter-spacing: 1.3rem;
+            font-size:1.8rem;
+        }
+
+        @include respond(tab-port){     // tablet in portrait mode = 900px
+            // font-size: 50%;             // 8px (8/16) = 50%
+            letter-spacing: 1rem;
+            font-size:1.52rem;
+        }
+
+        @include respond(phone){        // phone = 600px 
+            // font-size: 43.75%;         // 7px (7/16) = 43.75%
+            letter-spacing: .65rem;
+            font-size:1rem;
+        }
+    }
+}
+
+
+.heading-secondary{
+    font-size:3.5rem;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing: .5rem;
+    background-image:linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display:inline-block;
+    -webkit-background-clip: text;
+    color:transparent;
+    transition:all 0.2;
+
+     @include respond(tab-port){     // tablet in portrait mode = 900px
+            // font-size: 50%;             // 8px (8/16) = 50%
+            font-size:3rem;
+    }
+    &:hover{
+        transform:skewX(15deg) skewY(2deg) scale(1.1);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    }
+
+}
+
+.heading-tertiary{
+    font-size: $default-font-size ;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: $default-font-size ;
+    &:not(last-child){
+        margin-bottom: 3rem;
+    }
+}

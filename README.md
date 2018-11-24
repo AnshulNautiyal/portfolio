@@ -1,6 +1,6 @@
 # Portfolio-version-1
 
-Prerequisite: You should have Node.js installed in your system.
+**Prerequisite:** You should have Node.js installed in your system.
 
 1. Download all the required file mentioned in package.json file.
    Run the below command in terminal/cmd to download all the packages.

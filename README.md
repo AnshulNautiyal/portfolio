@@ -9,4 +9,4 @@ Prerequisite: You should have Node.js installed in your system.
    npm run start
    "start" command runs multiple command inside it as mentioned in package.json file 
    for example : running the live server and watching the changes in SASS file and so on...
-3. you can list of command in package.json file
+3. You can see the list of command in package.json file
